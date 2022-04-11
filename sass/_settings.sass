@@ -1,0 +1,54 @@
+// общие стили проекта
+*
+    box-sizing: border-box
+    font-family: 'Libre Franklin', sans-serif;
+
+body
+    margin: 0
+    padding: 0
+    font-family: Mulish
+    color: $black
+    background: $white
+
+.container
+    max-width: 1170px
+    margin: auto
+
+=flex($jc, $ai, $ff)
+    display: flex
+    justify-content: $jc
+    align-items: $ai
+    flex-flow: $ff
+
+// общие стили картинок 
+img
+    width: 100%
+    object-fit: cover
+
+// общие стили ссылок
+a
+    color: $white
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+
+// общие стили кнопок
+button
+    border-radius: 4px
+    background: transparent
+    border: none
+    cursor: pointer
+    color: $white
+    &:hover
+        transition: 0.1s
+        transform: scale(0.97)
+
+.green_btn
+    font-weight: 400
+    font-size: 16px
+    line-height: 30px
+    padding: 15px 30px
+    background: $green
+    &:hover
+        background: $dark-green

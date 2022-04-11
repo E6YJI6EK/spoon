@@ -1,0 +1,37 @@
+.section
+    &__text
+        color: $gray
+        font-weight: 100
+        font-size: 24px
+        line-height: 36px
+        &_b
+            color: $black
+            font-weight: 700
+            font-size: 24px
+            line-height: 36px
+.first
+    padding-top: 120px
+    padding-bottom: 120px
+    &__text
+        width: 507px
+        margin-bottom: 54px
+    &__card-wrapper
+        +flex(space-between, center, row)
+    &__card
+        +flex(space-evenly, flex-start, column)
+        padding-top: 50px 
+        padding-bottom: 110px
+        padding-left: 40px
+        width: 377px
+        height: 330px
+        border: 1px solid $lightgray   
+        &__title
+            font-weight: 700
+            font-size: 16px
+            line-height: 24px
+        &__description
+            font-family: 'IBM Plex Mono', monospace
+            font-weight: 400
+            font-size: 13px
+            line-height: 24px
+            color: $gray
