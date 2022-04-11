@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Spoon</title>
   </head>
@@ -95,7 +96,7 @@
     <section class="first">
       <div class="container">
         <div class="first-wrapper">
-          <p class="section__text first__text">
+          <p class="section__text first__text" data-aos="fade-right">
             <span class="section__text_b first__text_b">
               Promoting your business and services with Propel:
             </span>
@@ -103,7 +104,7 @@
             propel your business.
           </p>
           <div class="first__card-wrapper">
-            <div class="first__card">
+            <div class="first__card" data-aos="fade-up">
               <div class="first__card__img">
                 <img src="img/coffee.svg" alt="" />
               </div>
@@ -112,7 +113,7 @@
                 Ne usu illud albucius abhor reant, partiendo scriptorem mel ne.
               </div>
             </div>
-            <div class="first__card">
+            <div class="first__card" data-aos="fade-up">
               <div class="first__card__img">
                 <img src="img/sausage.svg" alt="" />
               </div>
@@ -121,7 +122,7 @@
                 Fuisset intellegat delicatissimi ex mea. Cu probo integre nec.
               </div>
             </div>
-            <div class="first__card">
+            <div class="first__card" data-aos="fade-up">
               <div class="first__card__img">
                 <img src="img/calendar.svg" alt="" />
               </div>
@@ -136,12 +137,12 @@
       </div>
     </section>
     <section class="second">
-      <div class="second-wrapper"></div>
+      <div class="second-wrapper" data-aos="zoom-in"></div>
     </section>
     <section class="third">
       <div class="container">
         <div class="third-wrapper">
-          <p class="section__text third__text">
+          <p class="section__text third__text" data-aos="zoom-out">
             <span class="section__text_b">
               Illud decore voluptaria has at.
             </span>
@@ -155,7 +156,7 @@
     <section class="fourth">
       <div class="container">
         <div class="fourth-wrapper">
-          <div class="first-line">
+          <div class="first-line" data-aos="fade-right">
             <div class="first-line__img">
               <img src="img/pic-1.png" alt="Some Food" />
             </div>
@@ -174,7 +175,7 @@
               </p>
             </div>
           </div>
-          <div class="second-line">
+          <div class="second-line" data-aos="fade-left">
             <div class="second-line__img">
               <img src="img/pic-2.png" alt="Some Food" />
             </div>
@@ -193,24 +194,24 @@
               </p>
             </div>
           </div>
-          <h3 class="fourth__text_b">
+          <h3 class="fourth__text_b" data-aos="zoom-out">
             Wanna know more about the Premium deal?
           </h3>
-          <a href="#" class="green-link">See the full range of Premium</a>
+          <a href="#" class="green-link" data-aos="zoom-out">See the full range of Premium</a>
         </div>
       </div>
     </section>
     <section class="five">
       <div class="container">
         <div class="five-wrapper">
-          <div class="five__text">
+          <div class="five__text" data-aos="fade-right">
             <span class="five__text_g">Party On</span>
             <p class="section__text">
               <span class="section__text_b">Quas suscipit ad mea.</span>
               Pri cu dico labores officiis odio principes complectitur ad sea.
             </p>
           </div>
-          <button class="green_btn five__btn">Get Started</button>
+          <button class="green_btn five__btn" data-aos="fade-left">Get Started</button>
         </div>
       </div>
     </section>
@@ -277,16 +278,6 @@
       </div>
     </footer>
   </body>
-  <script>
-    const openBtn = document.querySelector(".header__menu__bars"),
-      closeBtn = document.querySelector(".mobile-menu__close-btn"),
-      mobileMenu = document.querySelector(".mobile-menu");
-
-    openBtn.addEventListener("click", () => {
-      mobileMenu.style.left = "0";
-    });
-    closeBtn.addEventListener("click", () => {
-      mobileMenu.style.left = "100%";
-    });
-  </script>
+  <script src="script/aos.js"></script>
+  <script src="script/script.js"></script>
 </html>

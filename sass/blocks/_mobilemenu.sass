@@ -1,12 +1,13 @@
 .mobile-menu
     position: fixed
-    overflow-y: scroll
+    overflow-y: hidden
     left: 100%
     transition: 0.2s
     height: 100% 
     top: 0
     right: 0
     background: $white
+    display: none
     &__close-btn
         color: $black
         position: absolute
@@ -16,7 +17,7 @@
         width: 15px
 .header__menu__list_m
     z-index: 1
-    overflow-y: scroll
+    overflow-y: hidden
     +flex(space-evenly, center, column)
     height: 100vh
     &__item

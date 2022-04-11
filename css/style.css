@@ -162,7 +162,7 @@ button:hover {
 
 .mobile-menu {
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: hidden;
   left: 100%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -170,6 +170,7 @@ button:hover {
   top: 0;
   right: 0;
   background: #fff;
+  display: none;
 }
 
 .mobile-menu__close-btn {
@@ -183,7 +184,7 @@ button:hover {
 
 .header__menu__list_m {
   z-index: 1;
-  overflow-y: scroll;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,6 +693,9 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mobile-menu {
+    display: block;
   }
 }
 
